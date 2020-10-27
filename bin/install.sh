@@ -1,0 +1,9 @@
+#!/bin/sh
+
+python3 -m venv venv
+. venv/bin/activate
+
+pip install Flask Flask-Caching
+
+cd ./client
+npm i
