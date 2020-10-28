@@ -3,12 +3,13 @@ import json
 
 class Aiven:
     def __init__(self):
-        self.conn = http.client.HTTPSConnection("api.aiven.io")
+        self.domain = "api.aiven.io"
 
     def clouds(self):
-        self.conn.request("GET", "/v1/clouds")
+        conn = http.client.HTTPSConnection(self.domain)
+        conn.request("GET", "/v1/clouds")
 
-        res = self.conn.getresponse()
+        res = conn.getresponse()
         data = res.read()
         json_data = json.loads(data.decode("utf-8"))
 
