@@ -1,0 +1,10 @@
+.RegionSelector {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.RegionSelector__label {
+    text-align: center;
+    margin-bottom: 10px;
+}
