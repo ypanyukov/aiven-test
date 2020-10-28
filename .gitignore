@@ -1,0 +1,9 @@
+venv
+.idea
+
+client/build
+
+templates/index.html
+static/css
+static/js
+static/media
