@@ -36,4 +36,4 @@ def api_clouds():
                 'code': 1,
                 'message': 'Something wrong'
             }
-        }
+        }, 500
